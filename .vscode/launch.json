@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Problems",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug/net8.0/problems.exe",
+            "args": ["${input:problem}"],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "preLaunchTask": "compilar-projeto" // <--- Isso executa o build antes de iniciar
+        }
+    ],
+    "inputs": [
+        {
+            "id": "problem",
+            "type": "pickString",
+            "description": "Selecione o problema",
+            "options": [
+                "IsAnagram",
+                "GroupAnagrams",
+            ]
+        }
+    ]
+}
