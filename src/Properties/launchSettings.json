@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "IsAnagram": {
+      "commandName": "Project",
+      "commandLineArgs": "IsAnagram",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "GroupAnagrams": {
+      "commandName": "Project",
+      "commandLineArgs": "GroupAnagrams",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
