@@ -16,6 +16,8 @@ class Program
         switch (problem)
         {
             case "IsAnagram": Solver.SolveIsAnagramsProblem(); break;
+            case "EncodeDecode": Solver.SolveEncodeDecodeProblem(); break;
+            case "TopKFrequent": Solver.SolveTopKFrequentProblem(); break;
             case "GroupAnagrams": Solver.SolveGroupAnagramsProblem(); break;
             default:
                 break;

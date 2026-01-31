@@ -1,18 +1,32 @@
 {
-  "profiles": {
-    "IsAnagram": {
-      "commandName": "Project",
-      "commandLineArgs": "IsAnagram",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "GroupAnagrams": {
-      "commandName": "Project",
-      "commandLineArgs": "GroupAnagrams",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+    "profiles": {
+        "IsAnagram": {
+            "commandName": "Project",
+            "commandLineArgs": "IsAnagram",
+            "environmentVariables": {
+
+            }
+        },
+        "TopKFrequent": {
+            "commandName": "Project",
+            "commandLineArgs": "TopKFrequent",
+            "environmentVariables": {
+
+            }
+        },
+        "GroupAnagrams": {
+            "commandName": "Project",
+            "commandLineArgs": "GroupAnagrams",
+            "environmentVariables": {
+
+            }
+        },
+        "EncodeDecode": {
+            "commandName": "Project",
+            "commandLineArgs": "EncodeDecode",
+            "environmentVariables": {
+
+            }
+        }
     }
-  }
 }

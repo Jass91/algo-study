@@ -37,9 +37,9 @@ public static partial class Solver
             letterCounter[c2]--;
         }
 
-        foreach (var c in s)
+        foreach (var k in letterCounter.Keys)
         {
-            var freq = letterCounter[c];
+            var freq = letterCounter[k];
             if (freq != 0)
                 return false;
         }
@@ -53,7 +53,9 @@ public static partial class Solver
         var exectionData = new List<string[]>
         {
             // Output: true
-            (["cat","tac"])
+            (["cat","tac"]),
+            (["racecar", "carrace"]),
+            (["rat", "cat"]),
         };
 
         int i = 1;

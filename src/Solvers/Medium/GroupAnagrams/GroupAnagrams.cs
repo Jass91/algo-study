@@ -23,25 +23,34 @@ public static partial class Solver
     // Time: O(m * n)
     private static List<List<string>> GroupAnagrams(string[] strs)
     {
-        var anagrams = new List<List<string>>();
-        var groups = strs.GroupBy(x => x.Length);
+		// Dicion rio onde a chave   uma representa  o da contagem de letras
+		var res = new Dictionary<string, List<string>>();
 
-        foreach(var grp in groups)
-        {
-            var first = grp.First();
-            var groupElements = grp.ToList();
-            var anagramGroup = groupElements.Where(x => IsAnagram(first, x)).ToList();
-            var notAnagramGroup = groupElements.Except(anagramGroup).ToList();
+		foreach (var s in strs)
+		{
+			// 1. Criar array de contagem para as 26 letras (a-z)
+			//var count = s.Select(c => c - 'a');
+			int[] count = new int[26];
+			foreach (char c in s)
+			{
+				count[c - 'a']++;
+			}
 
-            if (anagramGroup.Any())
-                anagrams.Add(anagramGroup);
+			// 2. Gerar uma chave  nica baseada nas frequ ncias
+			// Exemplo: "eat" vira "1#1#0#0#1#..." (a=1, b=0, c=0, d=0, e=1...)
+			string key = string.Join("#", count);
 
-            //if (notAnagramGroup.Any())
-            //    anagrams.Add(notAnagramGroup);
-        }
+			// 3. Agrupar no dicion rio
+			if (!res.ContainsKey(key))
+			{
+				res[key] = new List<string>();
+			}
+			res[key].Add(s);
+		}
 
-        return anagrams;
-    }
+		// Retorna os valores agrupados como uma lista de listas
+		return res.Values.ToList();
+	}
 
     // TODO: posso passar um arquivo teste
     public static void SolveGroupAnagramsProblem()
@@ -59,7 +68,7 @@ public static partial class Solver
         foreach(var data in exectionData)
         {
             var execResult = GroupAnagrams(data);
-            Console.WriteLine($"[{nameof(SolveIsAnagramsProblem)}] - Execution {i++}:");
+            Console.WriteLine($"[{nameof(SolveGroupAnagramsProblem)}] - Execution {i++}:");
             Console.WriteLine(JsonSerializer.Serialize(execResult));
             Console.WriteLine();
         }
