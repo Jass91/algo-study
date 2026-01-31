@@ -10,17 +10,37 @@ namespace Problems.Solvers.Medium;
 
 public static partial class Solver
 {
-	private static int[] ProductExceptSelf(int[] nums)
-	{
-		// O Coração do Problema:
-		// Para qualquer índice i, o produto de todos os outros elementos é composto por duas partes:
-		// O produto de tudo o que vem antes de i (à esquerda).
-		// O produto de tudo o que vem depois de i (à direita).
+    private static int[] ProductExceptSelf(int[] nums)
+    {
+        int n = nums.Length;
+        int[] res = new int[n];
 
-		throw new NotImplementedException();
+        // Passo 1: Preencher com os produtos à esquerda (prefixos)
+        // res[i] conterá o produto de todos os números antes do índice i
+        res[0] = 1; // Não tem nada à esquerda do primeiro
+        for (int i = 1; i < n; i++)
+        {
+            res[i] = res[i - 1] * nums[i - 1];
+        }
+
+        // Agora o array 'res' está assim: [1, 1, 2, 6] 
+        // (Note que o 6 é 1*2*3, ou seja, tudo à esquerda do 4)
+
+        // Passo 2: Multiplicar pelos produtos à direita (sufixos)
+        int sufixo = 1; // Acumulador para o que vem da direita
+        for (int i = n - 1; i >= 0; i--)
+        {
+            // Multiplicamos o que já temos (esquerda) pelo que vem da direita
+            res[i] = res[i] * sufixo;
+
+            // Atualizamos o sufixo para o próximo elemento à esquerda
+            sufixo *= nums[i];
+        }
+
+        return res;
     }
 
-	public static void SolveProductsArrayExceptSelfProblem()
+    public static void SolveProductsArrayExceptSelfProblem()
 	{
 		var exectionData = new List<int[]>
 		{

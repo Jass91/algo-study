@@ -1,32 +1,39 @@
 {
-    "profiles": {
-        "IsAnagram": {
-            "commandName": "Project",
-            "commandLineArgs": "IsAnagram",
-            "environmentVariables": {
+  "profiles": {
+    "IsAnagram": {
+      "commandName": "Project",
+      "commandLineArgs": "IsAnagram",
+      "environmentVariables": {
 
-            }
-        },
-        "TopKFrequent": {
-            "commandName": "Project",
-            "commandLineArgs": "TopKFrequent",
-            "environmentVariables": {
+      }
+    },
+    "TopKFrequent": {
+      "commandName": "Project",
+      "commandLineArgs": "TopKFrequent",
+      "environmentVariables": {
 
-            }
-        },
-        "GroupAnagrams": {
-            "commandName": "Project",
-            "commandLineArgs": "GroupAnagrams",
-            "environmentVariables": {
+      }
+    },
+    "GroupAnagrams": {
+      "commandName": "Project",
+      "commandLineArgs": "GroupAnagrams",
+      "environmentVariables": {
 
-            }
-        },
-        "EncodeDecode": {
-            "commandName": "Project",
-            "commandLineArgs": "EncodeDecode",
-            "environmentVariables": {
+      }
+    },
+    "EncodeDecode": {
+      "commandName": "Project",
+      "commandLineArgs": "EncodeDecode",
+      "environmentVariables": {
 
-            }
-        }
+      }
+    },
+    "ProductsArrayExceptSelf": {
+      "commandName": "Project",
+      "commandLineArgs": "ProductsArrayExceptSelf",
+      "environmentVariables": {
+
+      }
     }
+  }
 }

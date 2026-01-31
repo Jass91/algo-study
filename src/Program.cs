@@ -19,6 +19,7 @@ class Program
             case "EncodeDecode": Solver.SolveEncodeDecodeProblem(); break;
             case "TopKFrequent": Solver.SolveTopKFrequentProblem(); break;
             case "GroupAnagrams": Solver.SolveGroupAnagramsProblem(); break;
+            case "ProductsArrayExceptSelf": Solver.SolveProductsArrayExceptSelfProblem(); break;
             default:
                 break;
         }
