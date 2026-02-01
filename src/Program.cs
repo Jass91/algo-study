@@ -21,6 +21,7 @@ class Program
             case "TopKFrequent": Solver.SolveTopKFrequentProblem(); break;
             case "GroupAnagrams": Solver.SolveGroupAnagramsProblem(); break;
             case "ValidPalindrome": Solver.SolveValidPalindromeProblem(); break;
+            case "LongestConsecutive": Solver.SolveLongestConsecutiveProblem(); break;
             case "ProductsArrayExceptSelf": Solver.SolveProductsArrayExceptSelfProblem(); break;
             default:
                 break;

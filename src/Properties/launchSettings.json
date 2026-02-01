@@ -48,6 +48,13 @@
       "environmentVariables": {
 
       }
+    },
+    "LongestConsecutive": {
+      "commandName": "Project",
+      "commandLineArgs": "LongestConsecutive",
+      "environmentVariables": {
+
+      }
     }
   }
 }
