@@ -34,6 +34,20 @@
       "environmentVariables": {
 
       }
+    },
+    "ValidPalindrome": {
+      "commandName": "Project",
+      "commandLineArgs": "ValidPalindrome",
+      "environmentVariables": {
+
+      }
+    },
+    "MaxProfit": {
+      "commandName": "Project",
+      "commandLineArgs": "MaxProfit",
+      "environmentVariables": {
+
+      }
     }
   }
 }

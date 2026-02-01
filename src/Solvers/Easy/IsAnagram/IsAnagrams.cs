@@ -7,8 +7,6 @@ namespace Problems.Solvers.Medium;
 /// </summary>
 public static partial class Solver
 {
-    // Space: O(1)
-    // Time: O(n + m)
     private static bool IsAnagram(string s, string t)
     {
         var length = s.Length;
