@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Problems.Solvers.Medium;
+namespace Problems.Solvers;
 
 public static partial class Solver
 {

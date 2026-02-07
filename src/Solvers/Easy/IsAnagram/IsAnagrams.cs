@@ -1,12 +1,14 @@
 using System.Text.Json;
 
-namespace Problems.Solvers.Medium;
+namespace Problems.Solvers;
 
 /// <summary>
 /// Difficulty: Easy
 /// </summary>
 public static partial class Solver
 {
+    // Space: O(1)
+    // Time: O(n + m)
     private static bool IsAnagram(string s, string t)
     {
         var length = s.Length;
@@ -35,9 +37,9 @@ public static partial class Solver
             letterCounter[c2]--;
         }
 
-        foreach (var k in letterCounter.Keys)
+        foreach (var c in s)
         {
-            var freq = letterCounter[k];
+            var freq = letterCounter[c];
             if (freq != 0)
                 return false;
         }
@@ -46,21 +48,19 @@ public static partial class Solver
     }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
     // TODO: posso passar um arquivo teste
-    public static void SolveIsAnagramsProblem()
+    public static void SolveIsAnagramProblem()
     {
         var exectionData = new List<string[]>
         {
             // Output: true
-            (["cat","tac"]),
-            (["racecar", "carrace"]),
-            (["rat", "cat"]),
+            (["cat","tac"])
         };
 
         int i = 1;
         foreach(var data in exectionData)
         {
             var execResult = IsAnagram(data[0], data[1]);
-            Console.WriteLine($"[{nameof(SolveIsAnagramsProblem)}] - Execution {i++}:");
+            Console.WriteLine($"[{nameof(SolveIsAnagramProblem)}] - Execution {i++}:");
             Console.WriteLine(execResult);
             Console.WriteLine();
         }

@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace Problems.Solvers.Medium;
+namespace Problems.Solvers;
 
 /// <summary>
 /// Difficulty: Medium

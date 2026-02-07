@@ -1,0 +1,88 @@
+{
+    "profiles": {
+        "IsAnagram": {
+            "commandName": "Project",
+            "commandLineArgs": "IsAnagram",
+            "environmentVariables": {
+
+            }
+        },
+        "TopKFrequent": {
+            "commandName": "Project",
+            "commandLineArgs": "TopKFrequent",
+            "environmentVariables": {
+
+            }
+        },
+        "GroupAnagrams": {
+            "commandName": "Project",
+            "commandLineArgs": "GroupAnagrams",
+            "environmentVariables": {
+
+            }
+        },
+        "EncodeDecode": {
+            "commandName": "Project",
+            "commandLineArgs": "EncodeDecode",
+            "environmentVariables": {
+
+            }
+        },
+        "NumberOfIslands": {
+            "commandName": "Project",
+            "commandLineArgs": "NumberOfIslands",
+            "environmentVariables": {
+
+            }
+        },
+        "MergeSortedArray": {
+            "commandName": "Project",
+            "commandLineArgs": "MergeSortedArray",
+            "environmentVariables": {
+
+            }
+        },
+        "RemoveElement": {
+            "commandName": "Project",
+            "commandLineArgs": "RemoveElement",
+            "environmentVariables": {
+
+            }
+        },
+        "RemoveDuplicates2": {
+            "commandName": "Project",
+            "commandLineArgs": "RemoveDuplicates2",
+            "environmentVariables": {
+
+            }
+        },
+        "IsSubsequence": {
+            "commandName": "Project",
+            "commandLineArgs": "IsSubsequence",
+            "environmentVariables": {
+
+            }
+        },
+        "MajorityElement": {
+            "commandName": "Project",
+            "commandLineArgs": "MajorityElement",
+            "environmentVariables": {
+
+            }
+        },
+        "RotateArray": {
+            "commandName": "Project",
+            "commandLineArgs": "RotateArray",
+            "environmentVariables": {
+
+            }
+        },
+        "BusRoutes": {
+            "commandName": "Project",
+            "commandLineArgs": "BusRoutes",
+            "environmentVariables": {
+
+            }
+        }
+    }
+}
