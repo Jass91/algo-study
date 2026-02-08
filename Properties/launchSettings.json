@@ -90,6 +90,20 @@
       "environmentVariables": {
 
       }
+    },
+    "SortedSquares": {
+      "commandName": "Project",
+      "commandLineArgs": "SortedSquares",
+      "environmentVariables": {
+
+      }
+    },
+    "FinalPrices": {
+      "commandName": "Project",
+      "commandLineArgs": "FinalPrices",
+      "environmentVariables": {
+
+      }
     }
   }
 }

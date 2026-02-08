@@ -17,7 +17,9 @@ class Program
         {
             case "IsAnagram": Solver.SolveIsAnagramProblem(); break;
             case "BusRoutes": Solver.SolveBusRoutesProblem(); break;
+            case "FinalPrices": Solver.SolveFinalPricesProblem(); break;
             case "RotateArray": Solver.SolveRotateArrayProblem(); break;
+            case "SortedSquares": Solver.SolveSortedSquaresProblem(); break;
             case "EncodeDecode": Solver.SolveEncodeDecodeProblem(); break;
             case "TopKFrequent": Solver.SolveTopKFrequentProblem(); break;
             case "RemoveElement": Solver.SolveRemoveElementProblem(); break;
