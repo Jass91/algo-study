@@ -1,88 +1,95 @@
 {
-    "profiles": {
-        "IsAnagram": {
-            "commandName": "Project",
-            "commandLineArgs": "IsAnagram",
-            "environmentVariables": {
+  "profiles": {
+    "IsAnagram": {
+      "commandName": "Project",
+      "commandLineArgs": "IsAnagram",
+      "environmentVariables": {
 
-            }
-        },
-        "TopKFrequent": {
-            "commandName": "Project",
-            "commandLineArgs": "TopKFrequent",
-            "environmentVariables": {
+      }
+    },
+    "TopKFrequent": {
+      "commandName": "Project",
+      "commandLineArgs": "TopKFrequent",
+      "environmentVariables": {
 
-            }
-        },
-        "GroupAnagrams": {
-            "commandName": "Project",
-            "commandLineArgs": "GroupAnagrams",
-            "environmentVariables": {
+      }
+    },
+    "GroupAnagrams": {
+      "commandName": "Project",
+      "commandLineArgs": "GroupAnagrams",
+      "environmentVariables": {
 
-            }
-        },
-        "EncodeDecode": {
-            "commandName": "Project",
-            "commandLineArgs": "EncodeDecode",
-            "environmentVariables": {
+      }
+    },
+    "EncodeDecode": {
+      "commandName": "Project",
+      "commandLineArgs": "EncodeDecode",
+      "environmentVariables": {
 
-            }
-        },
-        "NumberOfIslands": {
-            "commandName": "Project",
-            "commandLineArgs": "NumberOfIslands",
-            "environmentVariables": {
+      }
+    },
+    "NumberOfIslands": {
+      "commandName": "Project",
+      "commandLineArgs": "NumberOfIslands",
+      "environmentVariables": {
 
-            }
-        },
-        "MergeSortedArray": {
-            "commandName": "Project",
-            "commandLineArgs": "MergeSortedArray",
-            "environmentVariables": {
+      }
+    },
+    "MergeSortedArray": {
+      "commandName": "Project",
+      "commandLineArgs": "MergeSortedArray",
+      "environmentVariables": {
 
-            }
-        },
-        "RemoveElement": {
-            "commandName": "Project",
-            "commandLineArgs": "RemoveElement",
-            "environmentVariables": {
+      }
+    },
+    "RemoveElement": {
+      "commandName": "Project",
+      "commandLineArgs": "RemoveElement",
+      "environmentVariables": {
 
-            }
-        },
-        "RemoveDuplicates2": {
-            "commandName": "Project",
-            "commandLineArgs": "RemoveDuplicates2",
-            "environmentVariables": {
+      }
+    },
+    "RemoveDuplicates2": {
+      "commandName": "Project",
+      "commandLineArgs": "RemoveDuplicates2",
+      "environmentVariables": {
 
-            }
-        },
-        "IsSubsequence": {
-            "commandName": "Project",
-            "commandLineArgs": "IsSubsequence",
-            "environmentVariables": {
+      }
+    },
+    "IsSubsequence": {
+      "commandName": "Project",
+      "commandLineArgs": "IsSubsequence",
+      "environmentVariables": {
 
-            }
-        },
-        "MajorityElement": {
-            "commandName": "Project",
-            "commandLineArgs": "MajorityElement",
-            "environmentVariables": {
+      }
+    },
+    "MajorityElement": {
+      "commandName": "Project",
+      "commandLineArgs": "MajorityElement",
+      "environmentVariables": {
 
-            }
-        },
-        "RotateArray": {
-            "commandName": "Project",
-            "commandLineArgs": "RotateArray",
-            "environmentVariables": {
+      }
+    },
+    "RotateArray": {
+      "commandName": "Project",
+      "commandLineArgs": "RotateArray",
+      "environmentVariables": {
 
-            }
-        },
-        "BusRoutes": {
-            "commandName": "Project",
-            "commandLineArgs": "BusRoutes",
-            "environmentVariables": {
+      }
+    },
+    "BusRoutes": {
+      "commandName": "Project",
+      "commandLineArgs": "BusRoutes",
+      "environmentVariables": {
 
-            }
-        }
+      }
+    },
+    "NumberOfIslands2": {
+      "commandName": "Project",
+      "commandLineArgs": "NumberOfIslands2",
+      "environmentVariables": {
+
+      }
     }
+  }
 }

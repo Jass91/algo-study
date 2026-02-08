@@ -23,6 +23,7 @@ class Program
             case "RemoveElement": Solver.SolveRemoveElementProblem(); break;
             case "GroupAnagrams": Solver.SolveGroupAnagramsProblem(); break;
             case "IsSubsequence": Solver.SolveIsSubsequenceProblem(); break;
+            case "NumberOfIslands2": Solver.SolveNumIslands2Problem(); break;
             case "MajorityElement": Solver.SolveMajorityElementProblem(); break;
             case "NumberOfIslands": Solver.SolveNumberOfIslandsProblem(); break;
             case "MergeSortedArray": Solver.SolveMergeSortedArrayProblem(); break;

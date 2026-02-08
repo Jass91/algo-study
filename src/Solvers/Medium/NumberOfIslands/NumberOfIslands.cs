@@ -39,8 +39,8 @@ public static partial class Solver
 		nodesToVisit.Push((row, col));
 
 		// Deslocamentos para: Cima, Baixo, Esquerda, Direita
-		int[] rowOffsets = { -1, 1, 0, 0 };
-		int[] colOffsets = { 0, 0, -1, 1 };
+		int[] rowOffsets = [-1, 1, 0, 0];
+		int[] colOffsets = [0, 0, -1, 1];
 
 		while(nodesToVisit.Count > 0)
 		{
