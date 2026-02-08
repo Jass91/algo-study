@@ -9,7 +9,8 @@ public static partial class Solver
     private class DSU<T> where T : notnull
     {
         private int _setCounter;
-        
+        private readonly EqualityComparer<T> _comparer = EqualityComparer<T>.Default;
+
         // Armazenamos o pai de cada elemento. Se não existir no dicionário, o nó ainda não foi "criado".
         private readonly Dictionary<T, T> _parents = new();
         
@@ -31,7 +32,7 @@ public static partial class Solver
         public T Find(T x)
         {
             // Se o pai não for ele mesmo, seguimos para cima e aplicamos Path Compression
-            if (!_parents[x].Equals(x))
+            if (!_comparer.Equals(_parents[x], x))
                 _parents[x] = Find(_parents[x]);
             
             return _parents[x];
