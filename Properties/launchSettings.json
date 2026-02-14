@@ -104,6 +104,27 @@
       "environmentVariables": {
 
       }
+    },
+    "PreorderTraversal": {
+      "commandName": "Project",
+      "commandLineArgs": "PreorderTraversal",
+      "environmentVariables": {
+
+      }
+    },
+    "PostorderTraversal": {
+      "commandName": "Project",
+      "commandLineArgs": "PostorderTraversal",
+      "environmentVariables": {
+
+      }
+    },
+    "InorderTraversal": {
+      "commandName": "Project",
+      "commandLineArgs": "InorderTraversal",
+      "environmentVariables": {
+
+      }
     }
   }
 }
