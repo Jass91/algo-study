@@ -142,7 +142,7 @@ public static partial class Solver
 		{
 			var input = JsonSerializer.Serialize(new { mode, node });
 			
-			var result = PostorderTraversal(mode, node);
+			var result = PreorderTraversal(mode, node);
 
 			Console.WriteLine($"[{nameof(SolvePostorderTraversalProblem)}] - Execution {i++}:");
 			Console.WriteLine($"Input: {input}");
