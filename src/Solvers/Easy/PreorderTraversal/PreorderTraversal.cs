@@ -10,7 +10,7 @@ namespace Problems.Solvers;
 
 public static partial class Solver
 {
-	 private class TreeNode
+	private class TreeNode
      {
         public int val;
         public TreeNode left;
@@ -65,33 +65,18 @@ public static partial class Solver
             PreorderTraversalDFS(root, new List<int>());
     }
 
-    private static IList<int> PreorderTraversalRec(TreeNode root, List<int> result)
+    private static IList<int> PreorderTraversalRec(TreeNode node, List<int> result)
     {
-        if (root is null)
+        if (node is null)
             return new List<int>();
 
-        var stack = new Stack<TreeNode>();
+        result.Add(node.val);
 
-        stack.Push(root);
+        if (node.left != null)
+            PreorderTraversalRec(node.left, result);
 
-        while (stack.Count > 0)
-        {
-            var currentNode = stack.Pop();
-
-            result.Add(currentNode.val);
-
-            // Root -> Left -> Right
-            // por estar usando uma pilha, precisamos empilhar ao contrário da ordem que queremos visitar.
-
-            // right primeiro
-            if (currentNode.right != null)
-                stack.Push(currentNode.right);
-
-            // left depois
-            if (currentNode.left != null)
-                stack.Push(currentNode.left);
-        }
-
+        if (node.right != null)
+            PreorderTraversalRec(node.right, result);
 
         return result;
     }
@@ -122,7 +107,6 @@ public static partial class Solver
             if (currentNode.left != null)
                 stack.Push(currentNode.left);
         }
-
 
         return result;
     }
